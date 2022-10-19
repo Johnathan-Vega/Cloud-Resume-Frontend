@@ -1,0 +1,23 @@
+name: Upload files for website
+
+#Triggers on push to main branch
+on:
+  push:
+    branches:
+      - main
+
+#AWS Credentials actions to sync Github repo
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment: production
+    steps:
+      - uses: actions/checkout@v3
+      - name: Set AWS credentials
+        uses: aws-actions/configure-aws-credentials@v1
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+      - name: S3 sync
+        run: aws s3 sync . ${{ secrets.AWS_S3_BUCKET }} --delete
