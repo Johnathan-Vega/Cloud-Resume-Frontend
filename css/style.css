@@ -1,0 +1,258 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background: rgb(255, 255, 255);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+.container{
+    position: relative;
+    width: 100%;
+    max-width: 1000px;
+    min-height: 1250px;
+    background: white;
+    margin: 0px;
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+.container .left_container{
+    position: relative;
+    padding: 40px;
+    background: #003147;
+}
+.container .right_container{
+    position: relative;
+    padding: 20px;
+    background: #ffff;
+}
+.profile{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.name h1{
+    margin-top: 20px;
+    display: inline-block;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    color: white;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.role h2{
+  font-size: 1.5em;
+    font-family: 'Calibri', 'Trebuchet MS', sans-serif;
+    color: white;
+    font-weight: 300;
+}
+.profile .profile-pic {
+    position: relative;
+    width: 225px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.header_right{
+    position: absolute;
+    text-align: left;
+    margin: 0px;
+    height: 210px;
+    width: 350px;
+    right: 35px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: white;
+}
+
+.contact_info h3{
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    color: white;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.location{
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Calibri', 'Trebuchet MS', sans-serif;
+    color: white;
+    font-weight: 300;
+}
+.email{
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Calibri', 'Trebuchet MS', sans-serif;
+    color: white;
+    font-weight: 300;
+}
+.phone{
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Calibri', 'Trebuchet MS', sans-serif;
+    color: white;
+    font-weight: 300;
+}
+.linkedin{
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Calibri', 'Trebuchet MS', sans-serif;
+    color: white;
+    font-weight: 300;
+}
+
+
+.linkedin a{
+    color: white;
+}
+
+.skills_head{
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    color: white;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.skills_left ul{
+    margin-top: 20px;
+    position: absolute;
+    text-transform: uppercase;
+    text-align: left;
+    font-family: 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 1.25em;
+    color: white;
+    font-weight: 300;
+    line-height: 1.4em;
+}
+
+.skills_right ul{
+    margin-top: 20px;
+position: relative;
+    text-transform: uppercase;
+    text-align: left;
+    font-family: 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 1.25em;
+    color: white;
+    font-weight: 300;
+    line-height: 1.4em;
+    right: 25%;
+    left: 50%;
+}
+
+.certs{
+    padding-top: 20px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+    margin-top: 20px;
+}
+
+.certs_head h2{
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 2em;
+    color: white;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.certs ul{
+    margin-top: 20px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Calibri', 'Trebuchet MS', sans-serif;
+    font-size: 1.25em;
+    color: white;
+    font-weight: 300;
+    line-height: 1.4em;
+}
+
+.summary_head h2{
+    padding-bottom: 20px;
+    font-size: 30px;
+}
+
+.projects_head h2{
+    padding-top: 20px;
+    border-top: 1.5px solid #003147;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.crc h4{
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 20px;
+}
+
+.work_head h2{
+    padding-top: 20px;
+    border-top: 1.5px solid #003147;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.launch h4{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+
+.tech h5{
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: #000000a1;
+}
+
+.hockey h4{
+    padding-top: 10px;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+
+.anaheim h5{
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: #000000a1;
+}
+
+.education_head h2{
+    padding-top: 20px;
+    border-top: 1.5px solid #003147;
+    margin-top: 20px;
+    font-size: 30px;
+}
+
+.school h4{
+    padding-top: 15px;
+    padding-bottom: 5px;
+    font-size: 20px;
+}
+
+.year h5{
+    padding-bottom: 10px;
+    font-size: 20px;
+    color: #000000a1;
+}
