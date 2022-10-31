@@ -20,4 +20,4 @@ jobs:
           aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           aws-region: us-east-1
       - name: S3 sync
-        run: aws s3 sync . ${{ secrets.AWS_S3_BUCKET }} --delete
+        run: aws s3 sync ./Website ${{ secrets.AWS_S3_BUCKET }} --delete
