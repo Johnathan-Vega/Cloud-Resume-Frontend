@@ -1,0 +1,231 @@
+/* @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700); */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap');
+html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* Main background and body setup */
+body
+{
+    background: lightblue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+}
+
+.container
+{
+    position: relative;
+    width: 85%;
+    max-width: 90%;
+    min-height: 50px;
+    background: #fff;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    box-shadow: 0 35px 55px rgba(0, 0, 0, 0.1);
+}
+
+/* Left side, Picture, Title, Contact, and Skills */
+.container .left_side
+{
+    position: relative;
+    background: #003147;
+    padding: 20px;
+}
+
+.title
+{
+    color: #fff;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin-bottom: 20px;
+}
+
+.profiletext
+{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.profiletext .imagebox
+{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    overflow: hidden;
+}
+
+.profiletext .imagebox img
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.profiletext h2
+{
+    color: #fff;
+    font-size: 1.5em;
+    margin-top: 20px;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.4em;
+}
+
+.profiletext h2 span
+{
+    font-size: 0.8em;
+    font-weight: 300;
+}
+
+.contactInfo
+{
+    padding-top: 10px;
+}
+
+.contactInfo ul
+{
+    position: relative;
+    padding: 0px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.contactInfo ul li
+{
+    position: relative;
+    list-style: none;
+    margin: 10px;
+
+}
+
+.contactInfo ul li .icon
+{
+    display: inline-block;
+    width: 30px;
+    font-size: 18px;
+    color: #03a9f4;
+}
+
+.contactInfo ul li a
+{
+    color: #fff;
+    font-weight: 0;
+}
+
+.contactInfo ul li span
+{
+    color: #fff;
+    font-weight: 300;
+}
+
+.skills li
+{
+    color: #fff;
+    font-weight: 10px;
+    margin-bottom: 10px;
+}
+
+/* Right side, Top Nav bar, Visitor Count, and the bulk of the resume */
+.container .right_side
+{
+    position: relative;
+    background: #e5e8da;
+}
+
+.topnav {
+    overflow: hidden;
+    background-color: #34495e;
+    position: relative;
+}
+
+.topnav #myLinks {
+    display: none;
+}
+  
+.topnav a {
+    color: white;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+    text-align: center;
+}
+
+.topnav a.icon {
+    background: #34495e;
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.topnav a:hover {
+    background-color: #3DFAFF;
+    color: white;
+}
+
+.active {
+    background-color: #34495e;
+    color: white;
+}
+
+.container .right_side .visitor
+{
+    text-align: center;
+    font-weight: 1000;
+}
+.container .right_side .Experience
+{
+    position: relative;
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+.container .right_side .Projects
+{
+    position: relative;
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+.container .right_side .Certifications
+{
+    position: relative;
+    padding: 20px;
+    border-bottom: 1px solid black;
+}
+
+.container .right_side .Education
+{
+    position: relative;
+    padding: 20px;
+}
+
+#social-thumb
+{
+    position: relative;
+    width: 30px;
+    border-radius: 20px;   
+}
+
+#cert-thumbnail
+{
+    position: relative;
+    width: 100px;
+    border-radius: 20px;   
+}
