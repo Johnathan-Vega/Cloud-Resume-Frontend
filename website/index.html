@@ -4,28 +4,30 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Johnathan Vega</title>
+    <title>Johnathan Vega | Cloud Security Engineer</title>
     <link rel="stylesheet" href="css/main.css">
     <script src="./script/visitorcounter.js" defer></script>
 </head>
 
+<script>
+function myFunction() {
+  var x = document.getElementById("myLinks");
+  if (x.style.display === "block") {
+    x.style.display = "none";
+  } else {
+    x.style.display = "block";
+  }
+}
+</script>
+
 <body>
-<!-- Left side panel-->
+
 <div class="container">
 <div class="left_side">
     <div class="profiletext">
         <div class="imagebox" id="image"><img src="images/PersonalPhoto.jpg" alt="Photo of myself"></div>
         <h2>Johnathan Vega<br><span>Cloud Security Engineer</span></h2>
     </div>
-
-    <div class="sidenav">
-        <a href="#skills">Skills</a>
-        <a href="#exp">Experience</a>
-        <a href="#projects">Projects</a>
-        <a href="#certs">Certifications</a>
-        <a href="#edu">Education</a>
-    </div>
-
     <div class="contactInfo">
         <h3 class="title">Contact Me</h3>
         <ul>
@@ -41,13 +43,13 @@
                 <span class="icon"><a href="https://github.com/Johnathan-Vega" class="link" target="_blank">
                 <img id="social-thumb" src="images/github.png" alt="Github">
                 </a></span>
-                <a href="https://github.com/Johnathan-Vega" class="text">https://github.com/Johnathan-Vega</a>
+                <a href="https://github.com/Johnathan-Vega" class="text">Github</a>
             </li>
             <li>
-                <span class="icon"><a href="https://www.linkedin.com/in/johnathan-vega" class="link" target="_blank">
+                <span class="icon"><a href="https://www.linkedin.com/in/JohnathanVega" class="link" target="_blank">
                 <img id="social-thumb" src="images/linkedin.png" alt="LinkedIn">
                 </a></span>
-                <a href="https://www.linkedin.com/in/johnathan-vega" class="text">https://www.linkedin.com/in/johnathan-vega</a>
+                <a href="https://www.linkedin.com/in/JohnathanVega" class="text">LinkedIn</a>
             </li>
         </ul>
     </div>
@@ -62,16 +64,35 @@
             <li>Docker</li>
             <li>Python</li>
             <li>AWS Pentesting</li>
+            <li>Network Management</li>
             <li>Digital Forensics</li>
             <li>Incident Response</li>
         </ul>
     </div>
 </div>
     
-<div class="right_side">
+<div class="right_side"> 
+    <div class="mobile-container">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <div class="topnav">
+        <a href="#home" class="active"> Home </a>
+        <div id="myLinks">
+            <a href="#exp">Experience</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#certs">Certifications</a>
+        <a href="#edu">Education</a>
+        </div>
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <i class="fa fa-bars"></i>
+        </a>
+        </div> 
+    </div>
+
+    <div class="visitor">You Are Visitor Number: <span id="countscript"> </span> </div>
+
     <div class="Experience" id="exp">
-        <h1 class="title2">Visitor Count Demo: <span id="countscript"> </span></h1>
-        <h2 class="title2">Experience</h2>
+        <h1 class="title2">Experience</h1>
         <h3 class="worktitle">Cloud Security Engineer <span style="font-weight: normal;">| Jan 2022 - Present</span></h3>
         <h4 class="companyname">US Air Force San Antonio, TX</h4>
         <ul>
@@ -84,17 +105,17 @@
         <h3 class="worktitle">Cyber Defender Incident Responder <span style="font-weight: normal;">| May 2021 - Jan 2022</span></h3>
         <h4 class="companyname">US Air Force San Antonio, TX</h4>
         <ul>
-            <li>Conducted initial forensics on 600+ events utilizing tools such as Tanium, Splunk, and Encase to identify, scope, contain, and remediate incidents on over 900k systems.</li>
+            <li>Conducted initial forensic analysis on 600+ events utilizing tools such as Tanium, Splunk, and Encase to identify, scope, contain, and remediate incidents on over 900k systems.</li>
         </ul>
         <h3 class="worktitle">Network Defense Analyst <span style="font-weight: normal;">| Nov 2019 - May 2021</span></h3>
         <h4 class="companyname">US Air Force San Antonio, TX</h4>
         <ul>
-            <li>Monitored and contained over 7k alerts providing maintenance over domain controllers, DNS, and DHCP servers across government networks.</li>
+            <li>Contained over 7k security alerts providing security assurance over domain controllers, DNS, and DHCP servers across government networks.</li>
         </ul>
     </div>
     
     <div class="Projects" id="projects">
-        <h2 class="title2">Projects</h2>
+        <h1 class="title2">Projects</h1>
         <h3 class="worktitle">Cloud Resume</h3>
         <ul>
             <li>Created using HTML, CSS, and Javascript; Hosted statically on S3 and employed Cloudfront + Route 53 for content distribution.</li>
@@ -103,7 +124,7 @@
     </div>
     
     <div class="Certifications" id="certs">
-        <h2 class="title2">Certifications</h2>
+        <h1 class="title2">Certifications</h1>
         <a href="https://www.credly.com/badges/b4968222-4aa4-4652-8ed2-39584f056fbd/public_url" class="link" target="_blank">
             <img id="cert-thumbnail" src="images/AWS-SAA.png" alt="AWS Certified Solutions Architect Associate Badge">
         </a>
@@ -114,11 +135,10 @@
             <img id="cert-thumbnail" src="images/GCIA.jpg" alt="GIAC Certified Intrusion Analyst Badge">
         </a>
             <img id="cert-thumbnail" src="images/SecPlus.png" alt="CompTIA Security Plus Picture">
- 
     </div>
     
     <div class="Education" id="edu">
-        <h2 class="title2">Education</h2>
+        <h1 class="title2">Education</h1>
         <h3 class="worktitle">Bachelor of Arts in Criminology</h3>
         <p class="university">University of Florida - Gainesville, Florida</p>
     </div>
