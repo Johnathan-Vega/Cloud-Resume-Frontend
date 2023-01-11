@@ -10,7 +10,7 @@ html{
 /* Main background and body setup */
 body
 {
-    background: lightblue;
+    background: #1E1E24;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -21,7 +21,7 @@ body
 .container
 {
     position: relative;
-    width: 85%;
+    width: 95%;
     max-width: 90%;
     min-height: 50px;
     background: #fff;
